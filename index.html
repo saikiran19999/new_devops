@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>News Website</title>
+</head>
+<body>
+    <h1>Welcome to the News Website</h1>
+    <ul>
+        {% for article in articles %}
+        <li>
+            <h2>{{ article.title }}</h2>
+            <p>{{ article.content }}</p>
+        </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
